@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href ="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+  <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+     <h2>Expense Tracker</h2>
+    <div class="error-message"><p>Please enter your Budget Amount | More than 0</p></div>
+
+    <div class="budget-content">
+    <div class="ur-budget">
+     <form>
+     <label for="budget">Your Budget : </label>
+     <input type="number" placeholder="Enter your Budget" class="budget-input">
+     <button id="btn-budget" class="btn">Calculate</button>
+    </form>
+  </div>
+   <div class="ur-expenses">
+    <form>
+      <label for="expenses">Expenses Details : </label>
+      <input type="text" placeholder="Enter your Expenses Desc!" class="expenses_input">
+      <input type="number" placeholder="Enter Your Expenses Amount!" class="expenses_amount">
+      <button id="btn_expenses" class="btn">Add Expenses</button>
+     </form>
+   </div>
+</div>
+    <!------Cards start------>
+<ul class="cards">
+     <li>
+      <i class="bx bx-money"></i>
+      <span class="info">
+        <h3><span>$</span><span class="budget_card">7,373</span></h3>
+        <p>Budget</p>
+      </span>
+     </li>
+
+     <li>
+      <i class="bx bx-credit-card"></i>
+      <span class="info">
+        <h3><span>$</span><span class="expenses_card">9,373</span></h3>
+        <p>Expenses</p>
+      </span>
+     </li>
+
+     <li>
+      <i class="bx bx-dollar"></i>
+      <span class="info">
+        <h3><span>$</span><span class="balance_card">3,373</span></h3>
+        <p>Balance</p>
+      </span>
+     </li>
+</ul>
+ <!----------Cards Close-------->
+
+<!---------Table Content Start------->
+<div class="table_content">
+<h3>Budget Deatils</h3>
+<div class="table_data">
+ <!-- <ul class="tbl_tr_content">
+  <li>1</li>
+  <li>Gaming Mouse</li>
+  <li><span>$</span>600</li>
+   <li>
+    <button type="button" class="btn_edit">Edit</button>
+    <button type="button" class="btn_delete">Delete</button>
+    
+   </li>
+ </ul> -->
+
+</div>
+
+
+</div>
+
+
+
+<!--------Table Content Close----------->
+
+<div class="chart-container">
+  <canvas id="budgetPieChart"></canvas>
+</div>
+
+
+</div>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
